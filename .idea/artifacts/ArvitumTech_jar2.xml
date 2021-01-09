@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ArvitumTech:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/ArvitumTech_jar2</output-path>
+    <root id="archive" name="ArvitumTech.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../ArvitumTech2/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="ArvitumTech" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/DataBaseConnectorDriver/sqlite-jdbc-3.32.3.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
