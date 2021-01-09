@@ -1,0 +1,23 @@
+CREATE TABLE users (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	name VARCHAR(50));
+
+CREATE TABLE fields1 (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	fieldForScans VARCHAR(250),
+	fieldForClients VARCHAR(250),
+	fieldForConverter VARCHAR(250));
+
+INSERT INTO users (name)
+	VALUES ('Alice');
+
+INSERT INTO fields (fieldForScans,
+		fieldForClients,
+		fieldForConverter)
+	VALUES ();
+
+SELECT * FROM users;
+
+INSERT INTO fields1 (fieldForClients) VALUES ('D:\MyApps\ArvitumTech\DataBase') where id = 1;
+
+UPDATE fields1 SET fieldsForConverter='D:\MyApps' where id=1;
