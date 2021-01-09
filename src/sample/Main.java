@@ -413,7 +413,7 @@ public class Main extends Application {
 
             }
         });
-        System.out.println("Hello GitHub!!!");
+        System.out.println("Hello GitHub!");
         primaryStage.show();
     }
 
