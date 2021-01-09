@@ -1,0 +1,1 @@
+java -jar D:\MyApps\ArvitumTech\out\artifacts\ArvitumTech_jar2\ArvitumTech.jar
