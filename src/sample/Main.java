@@ -85,14 +85,14 @@ public class Main extends Application {
 
 
         VBox vBox = new VBox();
-        vBox.setPadding(new Insets(20, 20, 20, 20));
+        vBox.setPadding(new Insets(5, 5, 5, 5));
 
         LabelDate.date.setPrefWidth(260);
         buttonDate.setPrefWidth(350);
 
         GridPane middleBar = new GridPane();
         middleBar.setAlignment(Pos.CENTER);
-        middleBar.setVgap(10);
+        middleBar.setVgap(5);
         middleBar.setHgap(2);
 
         middleBar.add(DatePicker.datePicker, 3, 1);
@@ -116,7 +116,7 @@ public class Main extends Application {
         fileMenu.getItems().addAll(help,settings);
 
         BorderPane borderPane = new BorderPane();
-        borderPane.setPadding(new Insets(10, 10,10,10));
+        borderPane.setPadding(new Insets(5, 10,5,10));
         borderPane.setRight(LabelGreeting.greetings);
         borderPane.setLeft(mb);
 
@@ -128,6 +128,7 @@ public class Main extends Application {
         borderPaneForConvertButton.getChildren().add(LabelProcess.process);
 
         TableClients.clientTable.setPlaceholder(new Label("Any data to show yet!"));
+        clientTable.setMaxHeight(350);
         TableClients.selectionModelClient.setSelectionMode(SelectionMode.SINGLE);
         TableClients.firstNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("firstname"));
         TableClients.firstNameTableColumn.setMinWidth(130);
@@ -149,6 +150,7 @@ public class Main extends Application {
             TableScans.scanTable.setDisable(false);
 
         TableScans.scanTable.setPlaceholder(new Label("Any data to show yet!"));
+        TableScans.scanTable.setMaxHeight(350);
         TableScans.selectionModelScan.setSelectionMode(SelectionMode.SINGLE);
         TableScans.scanName.setCellValueFactory(new PropertyValueFactory<>("scanname"));
         TableScans.scanDate.setCellValueFactory(new PropertyValueFactory<>("date"));
@@ -413,7 +415,6 @@ public class Main extends Application {
 
             }
         });
-        System.out.println("Hello GitHub! Trying to make second branch");
         primaryStage.show();
     }
 
