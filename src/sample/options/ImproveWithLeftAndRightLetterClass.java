@@ -1,10 +1,7 @@
 package sample.options;
 
 import Controller.DBController;
-import Controller.SearchScanClass;
 import ExceptionAr.ExceptionWindow;
-import Model.objects.Client;
-import View.tables.TableClients;
 import sample.Main;
 
 import java.io.*;
@@ -13,15 +10,13 @@ import java.nio.file.StandardCopyOption;
 import java.sql.SQLException;
 
 public class ImproveWithLeftAndRightLetterClass {
-    public static String scans [] = null;
-    public String arrayForLeftScans [] = null;
-    public String arrayForRightScans [] = null;
-    static File leftScans = null;
-    static File rightScans = null;
-    static String strLineForLeft;
-    static String strLineForRight;
-    static String tempNameOfScan;
-    static String result;
+
+    private static File leftScans = null;
+    private static File rightScans = null;
+    private static String strLineForLeft;
+    private static String strLineForRight;
+    private static String tempNameOfScan;
+    private static String result;
 
     public static String improveMethod(String array [], File directory, String podopitniy) {
         leftScans = new File(directory + "\\" + "_left.log");
