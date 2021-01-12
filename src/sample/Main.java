@@ -3,7 +3,6 @@ package sample;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.sql.*;
@@ -41,7 +40,6 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
-import java.util.concurrent.TimeUnit;
 
 import static View.buttons.ButtonDate.buttonDate;
 import static View.labels.LabelFIO.fio;
@@ -122,7 +120,7 @@ public class Main extends Application {
 
         VBox borderPaneForConvertButton = new VBox();
         borderPaneForConvertButton.setSpacing(20);
-        borderPaneForConvertButton.setPadding(new Insets(10,10,10,10));
+        borderPaneForConvertButton.setPadding(new Insets(5,10,5,10));
         borderPaneForConvertButton.setAlignment(Pos.CENTER);
         borderPaneForConvertButton.getChildren().add(ButtonConvert.buttonConvert);
         borderPaneForConvertButton.getChildren().add(LabelProcess.process);
@@ -142,7 +140,7 @@ public class Main extends Application {
         ButtonConfirmLeftScan.confirmLeftScan.setPrefWidth(260);
 
         ButtonConvert.buttonConvert.setPrefWidth(620);
-        ButtonConvert.buttonConvert.setPrefHeight(70);
+        ButtonConvert.buttonConvert.setPrefHeight(50);
 
         if (manualChecker == 0)
             TableScans.scanTable.setDisable(true);

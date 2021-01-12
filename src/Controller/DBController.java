@@ -23,7 +23,7 @@ public class DBController {
         //"jdbc:sqlite:E:\\ArvitumTech\\DataBase\\Arvitum.db"
 
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:D:\\MyApps\\ArvitumTech\\DataBase\\Arvitum.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:E:\\ArvitumTech\\DataBase\\Arvitum.db");
             statement = connection.createStatement();
             rs = statement.executeQuery(query);
             result = rs.getString("name");
@@ -47,7 +47,7 @@ public class DBController {
         String queryUpdateName = "UPDATE users SET name = '" + newName + "' where id = 1";
 
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:D:\\MyApps\\ArvitumTech\\DataBase\\Arvitum.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:E:\\ArvitumTech\\DataBase\\Arvitum.db");
             statement = connection.createStatement();
             if (!DBController.getFromDBName().equals(null)) {
                 statement.executeUpdate(queryUpdateName);
@@ -80,7 +80,7 @@ public class DBController {
 
 
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:D:\\MyApps\\ArvitumTech\\DataBase\\Arvitum.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:E:\\ArvitumTech\\DataBase\\Arvitum.db");
             statement = connection.createStatement();
             rs = statement.executeQuery(query);
             result = rs.getString("fieldForScans");
@@ -106,7 +106,7 @@ public class DBController {
         String queryUpdateFolderScan = "UPDATE fields1 SET fieldForScans = '" + newFolder + "'  WHERE id = 1";
 
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:D:\\MyApps\\ArvitumTech\\DataBase\\Arvitum.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:E:\\ArvitumTech\\DataBase\\Arvitum.db");
             statement = connection.createStatement();
             if (!DBController.getFromDBScanFolder().equals(null)) {
                 statement.executeUpdate(queryUpdateFolderScan);
@@ -138,7 +138,7 @@ public class DBController {
 
 
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:D:\\MyApps\\ArvitumTech\\DataBase\\Arvitum.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:E:\\ArvitumTech\\DataBase\\Arvitum.db");
             statement = connection.createStatement();
             rs = statement.executeQuery(query);
             result = rs.getString("fieldForClients");
@@ -164,7 +164,7 @@ public class DBController {
         String queryUpdateFolderClient = "UPDATE fields1 SET fieldForClients = '" + newFolder + "'  WHERE id = 1";
 
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:D:\\MyApps\\ArvitumTech\\DataBase\\Arvitum.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:E:\\ArvitumTech\\DataBase\\Arvitum.db");
             statement = connection.createStatement();
             if (!getFromDBClientFolder().equals(null)) {
                 System.out.println("are we here");
@@ -199,7 +199,7 @@ public class DBController {
 
 
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:D:\\MyApps\\ArvitumTech\\DataBase\\Arvitum.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:E:\\ArvitumTech\\DataBase\\Arvitum.db");
             statement = connection.createStatement();
             rs = statement.executeQuery(query);
             result = rs.getString("fieldForConverter");
@@ -225,7 +225,7 @@ public class DBController {
         String queryUpdateFolderConvert = "UPDATE fields1 SET fieldForConverter = '" + newFolder + "'  WHERE id = 1";
 
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:D:\\MyApps\\ArvitumTech\\DataBase\\Arvitum.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:E:\\ArvitumTech\\DataBase\\Arvitum.db");
             statement = connection.createStatement();
             if (!DBController.getFromDBConvertFolder().equals(null)) {
                 statement.executeUpdate(queryUpdateFolderConvert);
